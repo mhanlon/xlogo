@@ -39,6 +39,11 @@
     IBOutlet id maximumTurtles;
     IBOutlet id lineWidth;
     IBOutlet id saveSpeed;
+    IBOutlet id shouldAutorunOnReturn;
+    IBOutlet id _showLineNumbers;
+
+    IBOutlet NSWindow* _logoCommandHelpWindow;
+    IBOutlet NSTextView* _logoCommandHelpTextView;
 }
 
 // Preferences methods

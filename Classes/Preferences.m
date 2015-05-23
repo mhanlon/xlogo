@@ -123,6 +123,8 @@ static Preferences	*sharedInstance = NULL;
 	// Setup default-values ("fallback")
 	maxTurtles = 100;
 	saveTurtleSpeed = YES;
+    _shouldAutorunOnReturn = YES;
+    _showLineNumbers = YES;
 	turtleSpeed = 1.0;			// full speed! 2.0 = double speed, 0.5 = half speed
 	lineWidth = 3.0;
 
@@ -154,6 +156,18 @@ static Preferences	*sharedInstance = NULL;
 	{
 		lineWidth = [value floatValue];
 	}
+    
+    value = [defaults objectForKey:@"AutorunOnReturn"];
+    if ( value )
+    {
+        _shouldAutorunOnReturn = [value boolValue];
+    }
+
+    value = [defaults objectForKey:@"ShowLineNumbers"];
+    if ( value )
+    {
+        _showLineNumbers = [value boolValue];
+    }
 }
 
 - (void)writeMaxTurtles
@@ -180,12 +194,20 @@ static Preferences	*sharedInstance = NULL;
 	[defaults setFloat:lineWidth forKey:@"Line Width"];
 }
 
+- (void)writeShouldAutorunOnReturn
+{
+    // Store the value of the line width
+    [defaults setFloat:lineWidth forKey:@"AutorunOnReturn"];
+}
+
 - (void)writePreferencesToDisk
 {
 	[self writeMaxTurtles];
 	[self writeSaveTurtleSpeed];
 	[self writeTurtleSpeed];
-	[self writeLineWidth];
+    [self writeLineWidth];
+    [self writeShouldAutorunOnReturn];
+    [defaults setBool:_showLineNumbers forKey:@"ShowLineNumbers"];
 }
 
 - (void)setMaxTurtles:(unsigned long)aMaxTurtles
@@ -230,6 +252,26 @@ static Preferences	*sharedInstance = NULL;
 - (void)setLineWidth:(float)aLineWidth
 {
 	lineWidth = aLineWidth;
+}
+
+- (BOOL)shouldAutorunOnReturn
+{
+    return _shouldAutorunOnReturn;
+}
+
+- (void)setShouldAutorunOnReturn:(BOOL)flag
+{
+    _shouldAutorunOnReturn = flag;
+}
+
+- (BOOL)showLineNumbers
+{
+    return _showLineNumbers;
+}
+
+- (void)setShowLineNumbers:(BOOL)flag
+{
+    _showLineNumbers = flag;
 }
 
 @end

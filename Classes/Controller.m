@@ -34,6 +34,13 @@
 
 @implementation Controller
 
+- (void)awakeFromNib
+{
+    // Load up the commands help.
+    NSURL* commandReferenceURL = [[NSBundle mainBundle] URLForResource:@"Logo Commands" withExtension:@"rtf"];
+    NSAttributedString* commandReferenceString = [[NSAttributedString alloc] initWithURL:commandReferenceURL documentAttributes:nil];
+    [[_logoCommandHelpTextView textStorage] setAttributedString:commandReferenceString];
+}
 
 //***********************************************************/
 // preferences - Get the preferences values from the OS and show the window
@@ -57,6 +64,10 @@
 	// Line width:
 	number = [NSNumber numberWithFloat:[prefs lineWidth]];
 	[lineWidth selectItemWithTitle:[number stringValue]];
+    
+    [shouldAutorunOnReturn setState:[prefs shouldAutorunOnReturn]];
+    
+    [_showLineNumbers setState:[prefs showLineNumbers]];
 
 	// Now show the panel (preferences window) to the user
 	[preferencesPanel makeKeyAndOrderFront:nil];
@@ -71,6 +82,10 @@
 	[preferencesPanel close];
 }
 
+- (IBAction)toggleAutorunOnReturn:(id)sender
+{
+    
+}
 
 //***************************************************************/
 // savePreferences - Save the users preferences and exit window
@@ -89,6 +104,10 @@
 
 	// Store the value of the line width
 	[prefs setLineWidth:[[[lineWidth selectedItem] title] floatValue]];
+    
+    [prefs setShouldAutorunOnReturn:[shouldAutorunOnReturn state]];
+    
+    [prefs setShowLineNumbers:[_showLineNumbers state]];
 
 	[Preferences writeToDisk];
 

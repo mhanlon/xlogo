@@ -156,6 +156,11 @@
 		4C66DC1A0B5B193600EC045B /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D6E4B6056CBCED00A8017D /* Preferences.m */; };
 		4C66DC1B0B5B193600EC045B /* Debugging.c in Sources */ = {isa = PBXBuildFile; fileRef = B4571CD7056EBE8600A8017D /* Debugging.c */; };
 		4C66DC1D0B5B193600EC045B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		859701FE1B10208700E48110 /* Logo Commands.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F5CA283C04AA71D601A8017D /* Logo Commands.rtf */; };
+		859702041B10263900E48110 /* NoodleLineNumberMarker.h in Headers */ = {isa = PBXBuildFile; fileRef = 859702001B10263900E48110 /* NoodleLineNumberMarker.h */; };
+		859702051B10263900E48110 /* NoodleLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 859702011B10263900E48110 /* NoodleLineNumberMarker.m */; };
+		859702061B10263900E48110 /* NoodleLineNumberView.h in Headers */ = {isa = PBXBuildFile; fileRef = 859702021B10263900E48110 /* NoodleLineNumberView.h */; };
+		859702071B10263900E48110 /* NoodleLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 859702031B10263900E48110 /* NoodleLineNumberView.m */; };
 		B41F377505541FF000A8017D /* kor.png in Resources */ = {isa = PBXBuildFile; fileRef = B41F377405541FF000A8017D /* kor.png */; };
 		B4571CD8056EBE8600A8017D /* Debugging.c in Sources */ = {isa = PBXBuildFile; fileRef = B4571CD7056EBE8600A8017D /* Debugging.c */; };
 		B461405B051EB8C100A8017D /* LogoColorTable.h in Headers */ = {isa = PBXBuildFile; fileRef = B4614059051EB8C100A8017D /* LogoColorTable.h */; };
@@ -229,6 +234,10 @@
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		4C66DC220B5B193600EC045B /* Info-XLogo__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-XLogo__Upgraded_.plist"; sourceTree = "<group>"; };
 		4C66DC230B5B193600EC045B /* XLogo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLogo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		859702001B10263900E48110 /* NoodleLineNumberMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberMarker.h; sourceTree = "<group>"; };
+		859702011B10263900E48110 /* NoodleLineNumberMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberMarker.m; sourceTree = "<group>"; };
+		859702021B10263900E48110 /* NoodleLineNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberView.h; sourceTree = "<group>"; };
+		859702031B10263900E48110 /* NoodleLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberView.m; sourceTree = "<group>"; };
 		B41F37370554198300A8017D /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = Resources/German.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		B41F37380554198800A8017D /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = Resources/German.lproj/XLogoDocument.nib; sourceTree = "<group>"; };
 		B41F373905541F9C00A8017D /* Danish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Danish; path = Resources/Danish.lproj/MainMenu.nib; sourceTree = "<group>"; };
@@ -372,11 +381,10 @@
 			children = (
 				F5CA271204AA158D01A8017D /* Controller.h */,
 				F5CA271304AA158D01A8017D /* Controller.m */,
+				859701FF1B10261100E48110 /* View */,
 				F5B0C26104ACFD2001A8017D /* Standalone objects */,
 				F5CA282304AA556701A8017D /* Turtle.h */,
 				F5CA282404AA556701A8017D /* Turtle.m */,
-				F5CA284F04AA9B0F01A8017D /* TurtleView.h */,
-				F5CA285004AA9B0F01A8017D /* TurtleView.m */,
 				B4D6E4B5056CBCED00A8017D /* Preferences.h */,
 				B4D6E4B6056CBCED00A8017D /* Preferences.m */,
 				F5CA271904AA175E01A8017D /* LogoDocument.h */,
@@ -421,6 +429,19 @@
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		859701FF1B10261100E48110 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5CA284F04AA9B0F01A8017D /* TurtleView.h */,
+				F5CA285004AA9B0F01A8017D /* TurtleView.m */,
+				859702001B10263900E48110 /* NoodleLineNumberMarker.h */,
+				859702011B10263900E48110 /* NoodleLineNumberMarker.m */,
+				859702021B10263900E48110 /* NoodleLineNumberView.h */,
+				859702031B10263900E48110 /* NoodleLineNumberView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		F5B0C26104ACFD2001A8017D /* Standalone objects */ = {
@@ -500,6 +521,7 @@
 				4C66DBE40B5B193600EC045B /* Controller.h in Headers */,
 				4C66DBE50B5B193600EC045B /* LogoDocument.h in Headers */,
 				4C66DBE60B5B193600EC045B /* Debugging.h in Headers */,
+				859702041B10263900E48110 /* NoodleLineNumberMarker.h in Headers */,
 				4C66DBE70B5B193600EC045B /* NSTextViewOutputExtensions.h in Headers */,
 				4C66DBE80B5B193600EC045B /* Turtle.h in Headers */,
 				4C66DBE90B5B193600EC045B /* Utilities.h in Headers */,
@@ -507,6 +529,7 @@
 				4C66DBEB0B5B193600EC045B /* TurtleView.h in Headers */,
 				4C66DBEC0B5B193600EC045B /* Commands.h in Headers */,
 				4C66DBED0B5B193600EC045B /* LogoParser.h in Headers */,
+				859702061B10263900E48110 /* NoodleLineNumberView.h in Headers */,
 				4C66DBEE0B5B193600EC045B /* Expression.h in Headers */,
 				4C66DBEF0B5B193600EC045B /* StackObject.h in Headers */,
 				4C66DBF00B5B193600EC045B /* LogoParserExpression.h in Headers */,
@@ -604,6 +627,7 @@
 			files = (
 				4C66DBF50B5B193600EC045B /* Credits.rtf in Resources */,
 				4C66DBF60B5B193600EC045B /* MainMenu.nib in Resources */,
+				859701FE1B10208700E48110 /* Logo Commands.rtf in Resources */,
 				4C66DBF70B5B193600EC045B /* InfoPlist.strings in Resources */,
 				4C66DBF80B5B193600EC045B /* XLogoDocument.nib in Resources */,
 				4C66DBF90B5B193600EC045B /* go.png in Resources */,
@@ -673,7 +697,9 @@
 				4C66DC180B5B193600EC045B /* Variable.m in Sources */,
 				4C66DC190B5B193600EC045B /* LogoColorTable.m in Sources */,
 				4C66DC1A0B5B193600EC045B /* Preferences.m in Sources */,
+				859702071B10263900E48110 /* NoodleLineNumberView.m in Sources */,
 				4C66DC1B0B5B193600EC045B /* Debugging.c in Sources */,
+				859702051B10263900E48110 /* NoodleLineNumberMarker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

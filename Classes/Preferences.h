@@ -40,6 +40,8 @@
 	float			lineWidth;
 	float			turtleSpeed;
 	BOOL			saveTurtleSpeed;
+    BOOL			_shouldAutorunOnReturn;
+    BOOL			_showLineNumbers;
 
 	NSUserDefaults	*defaults;
 }
@@ -71,4 +73,8 @@
 - (BOOL)saveTurtleSpeed;
 - (void)setLineWidth:(float)aLineWidth;
 - (float)lineWidth;
+- (BOOL)shouldAutorunOnReturn;
+- (void)setShouldAutorunOnReturn:(BOOL)flag;
+- (BOOL)showLineNumbers;
+- (void)setShowLineNumbers:(BOOL)flag;
 @end

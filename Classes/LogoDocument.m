@@ -34,8 +34,17 @@
 #import "NSTextViewOutputExtensions.h"
 #import "Turtle.h"
 #import "Preferences.h"
+#import "NoodleLineNumberView.h"
 
 #define XLogoDocumentType	@"XLogoDocument"
+
+@interface LogoDocument ()
+{
+    SEL _insertNewlineSelector;
+    BOOL _shouldAutorunOnReturn;
+
+}
+@end
 
 @implementation LogoDocument
 
@@ -88,7 +97,17 @@
 //
 - (void)awakeFromNib
 {
+    [listingView setAutomaticQuoteSubstitutionEnabled:NO];
 	frequency = [self speedToFrequency:[[Preferences sharedInstance] turtleSpeed]];
+    if ( [[Preferences sharedInstance] showLineNumbers] )
+    {
+        NSScrollView* scrollView = [listingView enclosingScrollView];
+        NoodleLineNumberView* lineNumberView = [[NoodleLineNumberView alloc] initWithScrollView:scrollView];
+        [scrollView setVerticalRulerView:lineNumberView];
+        [scrollView setHasHorizontalRuler:NO];
+        [scrollView setHasVerticalRuler:YES];
+        [scrollView setRulersVisible:YES];
+    }
 }
 
 //***************************************************************/
@@ -100,6 +119,8 @@
 	if(self)
 	{
 		timer = NULL;
+        _insertNewlineSelector = NSSelectorFromString(@"insertNewline:");
+        _shouldAutorunOnReturn = [[Preferences sharedInstance] shouldAutorunOnReturn];
 	}
 	return(self);
 }
@@ -343,5 +364,21 @@
 {
 	[self stop];
 }
+
+#pragma mark -- TextView Delegate Methods --
+
+
+- (BOOL)textView:(NSTextView *)textView doCommandBySelector:(SEL)commandSelector
+{
+    if ( _shouldAutorunOnReturn && ( commandSelector == _insertNewlineSelector ) )
+    {
+        [self run];
+    }
+    // We return NO so we also get our default newline behavior
+    return NO;
+}
+
+// TODO:
+
 
 @end

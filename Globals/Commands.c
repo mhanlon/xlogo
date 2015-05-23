@@ -43,7 +43,7 @@ void InitCommands()
 	typedef struct CommandList CommandList;
 	struct CommandList
 	{
-		const unsigned char	*name;
+		const char	*name;
 		long				commandNumber;
 		unsigned char		matchTemplate[8];
 	};
@@ -75,7 +75,8 @@ void InitCommands()
 		{ "ifelse", kCommandIfElse, { kExpressionTypeNumber, kExpressionTypeList, kExpressionTypeList, 0 } },	/* implemented */
 		{ "fill", kCommandFloodFill, { 0 } },
 		{ "seth", kCommandSetHeading, { kExpressionTypeNumber, 0 } },							/* implemented */
-		{ "setc", kCommandSetColor, { kExpressionTypeNumberOrString, 0 } },						/* implemented */
+        { "setc", kCommandSetColor, { kExpressionTypeNumberOrString, 0 } },						/* implemented */
+        { "setpc", kCommandSetColor, { kExpressionTypeNumberOrString, 0 } },					/* implemented */
 		{ "setbg", kCommandSetBackground, { kExpressionTypeNumberOrString, 0 } },				/* implemented */
 		{ "setxy", kCommandSetXY, { kExpressionTypeNumber, kExpressionTypeNumber, 0 } },		/* implemented */
 		{ "setpos", kCommandSetPosition, { kExpressionTypeList, 0 } },
@@ -120,7 +121,7 @@ void InitCommands()
 	};
 	int					i;
 	int					size;
-	const unsigned char	*s;
+	const char	*s;
 	unichar				*d;
 	unichar				c;
 

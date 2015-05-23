@@ -163,7 +163,6 @@
 	count = [drawCommands count];
 
 	[path setLineWidth:lineWidth];
-//		[path setLineWidth:[[Preferences sharedInstance] lineWidth]];	// implement this
 	for(i = 0; i < count; i++)
 	{
 		drawCommand = [drawCommands objectAtIndex:i];

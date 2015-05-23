@@ -35,7 +35,7 @@
 
 @interface LogoDocument : NSDocument
 {
-	IBOutlet id	listingView;
+	IBOutlet NSTextView*	listingView;
 	IBOutlet id	outputView;
 	IBOutlet id	parser;
 	IBOutlet id	speedSlider;
