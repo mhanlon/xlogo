@@ -39,6 +39,9 @@
 	IBOutlet id	outputView;
 	IBOutlet id	parser;
 	IBOutlet id	speedSlider;
+    SEL _insertNewlineSelector;
+    BOOL _shouldAutorunOnReturn;
+        
 
 	float		frequency;
 	NSTimer		*timer;

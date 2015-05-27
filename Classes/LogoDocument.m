@@ -39,11 +39,7 @@
 #define XLogoDocumentType	@"XLogoDocument"
 
 @interface LogoDocument ()
-{
-    SEL _insertNewlineSelector;
-    BOOL _shouldAutorunOnReturn;
 
-}
 @end
 
 @implementation LogoDocument

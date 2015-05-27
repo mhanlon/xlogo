@@ -87,7 +87,7 @@
 		1F01AF0204BC60DD005A17E1 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F01AF0104BC60DD005A17E1 /* title.png */; };
 		1F05108404D1F35700FEFB36 /* pare.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F05108304D1F35700FEFB36 /* pare.png */; };
 		1F05108604D1F73F00FEFB36 /* partir.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F05108504D1F73F00FEFB36 /* partir.png */; };
-		1F59A39304D2084300FEFB36 /* xlogo help in Resources */ = {isa = PBXBuildFile; fileRef = 1FEB6EE504B7332200B7EED8 /* xlogo help */; };
+		1F59A39304D2084300FEFB36 /* xlogo.help in Resources */ = {isa = PBXBuildFile; fileRef = 1FEB6EE504B7332200B7EED8 /* xlogo.help */; };
 		1F672CFC04D42F9000AB81D1 /* depart.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F672CFB04D42F9000AB81D1 /* depart.png */; };
 		1F7F37F904B9DE2700B14428 /* doc.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1F7F37F804B9DE2700B14428 /* doc.icns */; };
 		1FEB6E8304B72E9700B7EED8 /* go.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FEB6E7C04B72E9700B7EED8 /* go.png */; };
@@ -132,7 +132,7 @@
 		4C66DC010B5B193600EC045B /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F01AF0104BC60DD005A17E1 /* title.png */; };
 		4C66DC020B5B193600EC045B /* pare.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F05108304D1F35700FEFB36 /* pare.png */; };
 		4C66DC030B5B193600EC045B /* partir.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F05108504D1F73F00FEFB36 /* partir.png */; };
-		4C66DC040B5B193600EC045B /* xlogo help in Resources */ = {isa = PBXBuildFile; fileRef = 1FEB6EE504B7332200B7EED8 /* xlogo help */; };
+		4C66DC040B5B193600EC045B /* xlogo.help in Resources */ = {isa = PBXBuildFile; fileRef = 1FEB6EE504B7332200B7EED8 /* xlogo.help */; };
 		4C66DC050B5B193600EC045B /* tomare.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FED70F804D2EC9300FEFB36 /* tomare.png */; };
 		4C66DC060B5B193600EC045B /* go_japanese.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FED70FA04D2ED4900FEFB36 /* go_japanese.png */; };
 		4C66DC070B5B193600EC045B /* depart.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F672CFB04D42F9000AB81D1 /* depart.png */; };
@@ -218,7 +218,7 @@
 		1FEB6E7F04B72E9700B7EED8 /* printer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = printer.png; sourceTree = "<group>"; };
 		1FEB6E8004B72E9700B7EED8 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
 		1FEB6E8104B72E9700B7EED8 /* xlogo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = xlogo.icns; sourceTree = "<group>"; };
-		1FEB6EE504B7332200B7EED8 /* xlogo help */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = "xlogo help"; sourceTree = SOURCE_ROOT; };
+		1FEB6EE504B7332200B7EED8 /* xlogo.help */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = xlogo.help; sourceTree = SOURCE_ROOT; };
 		1FED70F604D2EAC000FEFB36 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Resources/Japanese.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		1FED70F704D2EBFE00FEFB36 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Resources/Japanese.lproj/XLogoDocument.nib; sourceTree = "<group>"; };
 		1FED70F804D2EC9300FEFB36 /* tomare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tomare.png; sourceTree = "<group>"; };
@@ -417,7 +417,7 @@
 				F5CA271604AA175201A8017D /* XLogoDocument.nib */,
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
 				1FEB6E7A04B72E9700B7EED8 /* images */,
-				1FEB6EE504B7332200B7EED8 /* xlogo help */,
+				1FEB6EE504B7332200B7EED8 /* xlogo.help */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -612,7 +612,7 @@
 				1F01AF0204BC60DD005A17E1 /* title.png in Resources */,
 				1F05108404D1F35700FEFB36 /* pare.png in Resources */,
 				1F05108604D1F73F00FEFB36 /* partir.png in Resources */,
-				1F59A39304D2084300FEFB36 /* xlogo help in Resources */,
+				1F59A39304D2084300FEFB36 /* xlogo.help in Resources */,
 				1FED70F904D2EC9300FEFB36 /* tomare.png in Resources */,
 				1FED70FB04D2ED4900FEFB36 /* go_japanese.png in Resources */,
 				1F672CFC04D42F9000AB81D1 /* depart.png in Resources */,
@@ -641,7 +641,7 @@
 				4C66DC010B5B193600EC045B /* title.png in Resources */,
 				4C66DC020B5B193600EC045B /* pare.png in Resources */,
 				4C66DC030B5B193600EC045B /* partir.png in Resources */,
-				4C66DC040B5B193600EC045B /* xlogo help in Resources */,
+				4C66DC040B5B193600EC045B /* xlogo.help in Resources */,
 				4C66DC050B5B193600EC045B /* tomare.png in Resources */,
 				4C66DC060B5B193600EC045B /* go_japanese.png in Resources */,
 				4C66DC070B5B193600EC045B /* depart.png in Resources */,
@@ -847,6 +847,7 @@
 		4C66DC1F0B5B193600EC045B /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -859,6 +860,7 @@
 				INFOPLIST_FILE = "Info-XLogo__Upgraded_.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = XLogo;
@@ -877,6 +879,7 @@
 		4C66DC200B5B193600EC045B /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -886,6 +889,7 @@
 				INFOPLIST_FILE = "Info-XLogo__Upgraded_.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = XLogo;
@@ -904,6 +908,7 @@
 		4C66DC210B5B193600EC045B /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
@@ -911,6 +916,7 @@
 				INFOPLIST_FILE = "Info-XLogo__Upgraded_.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = XLogo;
