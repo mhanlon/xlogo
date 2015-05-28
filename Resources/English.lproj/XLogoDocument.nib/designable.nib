@@ -54,6 +54,7 @@
 					<characters key="NS.bytes">View</characters>
 				</object>
 				<nil key="NSUserInterfaceItemIdentifier"/>
+				<string key="NSWindowContentMinSize">{213, 107}</string>
 				<object class="NSView" key="NSWindowView" id="603044069">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
@@ -72,7 +73,7 @@
 											<array class="NSMutableArray" key="NSSubviews">
 												<object class="NSTextView" id="952483013">
 													<reference key="NSNextResponder" ref="553579015"/>
-													<int key="NSvFlags">274</int>
+													<int key="NSvFlags">2322</int>
 													<set class="NSMutableSet" key="NSDragTypes">
 														<string>Apple HTML pasteboard type</string>
 														<string>Apple PDF pasteboard type</string>
@@ -92,7 +93,7 @@
 														<string>WebURLsWithTitlesPboardType</string>
 														<string>public.url</string>
 													</set>
-													<string key="NSFrame">{{0, 200}, {246, 117}}</string>
+													<string key="NSFrameSize">{246, 117}</string>
 													<reference key="NSSuperview" ref="553579015"/>
 													<reference key="NSWindow"/>
 													<reference key="NSNextKeyView" ref="950048274"/>
@@ -230,19 +231,17 @@
 													</object>
 													<int key="NSTVFlags">70</int>
 													<string key="NSMaxSize">{443, 10000000}</string>
-													<string key="NSMinize">{231, 117}</string>
 													<nil key="NSDelegate"/>
 												</object>
 											</array>
 											<string key="NSFrame">{{1, 1}, {246, 117}}</string>
-											<string key="NSBounds">{{0, 200}, {246, 117}}</string>
 											<reference key="NSSuperview" ref="540564933"/>
 											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="952483013"/>
 											<reference key="NSDocView" ref="952483013"/>
 											<reference key="NSBGColor" ref="652036259"/>
 											<object class="NSCursor" key="NSCursor" id="455485901">
-												<string key="NSHotSpot">{5, 5}</string>
+												<string key="NSHotSpot">{1, -1}</string>
 												<int key="NSCursorType">0</int>
 											</object>
 											<int key="NScvFlags">4</int>
@@ -303,7 +302,7 @@
 											<array class="NSMutableArray" key="NSSubviews">
 												<object class="NSTextView" id="587464298">
 													<reference key="NSNextResponder" ref="691825220"/>
-													<int key="NSvFlags">274</int>
+													<int key="NSvFlags">2322</int>
 													<set class="NSMutableSet" key="NSDragTypes">
 														<string>Apple HTML pasteboard type</string>
 														<string>Apple PDF pasteboard type</string>
@@ -323,7 +322,7 @@
 														<string>WebURLsWithTitlesPboardType</string>
 														<string>public.url</string>
 													</set>
-													<string key="NSFrame">{{0, 148}, {246, 384}}</string>
+													<string key="NSFrameSize">{246, 384}</string>
 													<reference key="NSSuperview" ref="691825220"/>
 													<reference key="NSWindow"/>
 													<reference key="NSNextKeyView" ref="414849613"/>
@@ -370,12 +369,10 @@
 													</object>
 													<int key="NSTVFlags">70</int>
 													<string key="NSMaxSize">{443, 10000000}</string>
-													<string key="NSMinize">{231, 384}</string>
 													<nil key="NSDelegate"/>
 												</object>
 											</array>
 											<string key="NSFrame">{{1, 1}, {246, 384}}</string>
-											<string key="NSBounds">{{0, 148}, {246, 384}}</string>
 											<reference key="NSSuperview" ref="543304497"/>
 											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="587464298"/>
@@ -391,6 +388,7 @@
 											<string key="NSFrame">{{231, 1}, {16, 384}}</string>
 											<reference key="NSSuperview" ref="543304497"/>
 											<reference key="NSWindow"/>
+											<reference key="NSNextKeyView"/>
 											<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 											<string key="NSControlAction">_doScroller:</string>
 											<reference key="NSControlTarget" ref="543304497"/>
@@ -830,7 +828,7 @@
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1440, 877}}</string>
 				<string key="NSMinSize">{213, 129}</string>
-				<string key="NSMaxSize">{3.402820018375656e+38, 3.402820018375656e+38}</string>
+				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
 			</object>
 			<object class="NSCustomObject" id="360525337">
@@ -902,6 +900,14 @@
 						<reference key="destination" ref="946520291"/>
 					</object>
 					<int key="connectionID">56</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">printDocument:</string>
+						<reference key="source" ref="385078896"/>
+						<reference key="destination" ref="836756877"/>
+					</object>
+					<int key="connectionID">96</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
@@ -1347,7 +1353,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">95</int>
+			<int key="maxID">96</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

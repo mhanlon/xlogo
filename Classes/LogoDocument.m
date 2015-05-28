@@ -50,7 +50,7 @@
 //
 - (IBAction)printDocument:(id)sender
 {
-	[outputView print: sender];		// Send a print command to the View
+	[outputView print:sender];		// Send a print command to the View
 }
 
 
