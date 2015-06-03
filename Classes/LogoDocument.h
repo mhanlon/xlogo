@@ -37,6 +37,7 @@
 {
 	IBOutlet NSTextView*	listingView;
 	IBOutlet id	outputView;
+    // TODO: Add a GridView/RulerView for the outputView for the kids.
 	IBOutlet id	parser;
 	IBOutlet id	speedSlider;
     SEL _insertNewlineSelector;

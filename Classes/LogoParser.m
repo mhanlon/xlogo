@@ -533,7 +533,7 @@
 				switch(t)
 				{
 				  case kExpressionTypeNumber:
-					type = @"Nummeric expression";
+					type = @"Numeric expression";
 					success = success ? 0 != (kExpressionKindNumber & [expression[expressions] type]) : NO;
 					break;
 				  case kExpressionTypeString:		// Note: Numbers *ARE* allowed, because numbers are names (strings) too! -A string is expected, though. ;)
@@ -541,7 +541,7 @@
 					success = success ? 0 != ((kExpressionKindNumber & [expression[expressions] type]) || (kExpressionKindStringValue == [expression[expressions] type])) : NO;
 					break;
 				  case kExpressionTypeNumberOrString:
-					type = @"Nummeric or string expression";
+					type = @"Numeric or string expression";
 					success = success ? 0 != ((kExpressionKindNumber & [expression[expressions] type]) || (kExpressionKindStringValue == [expression[expressions] type])) : NO;
 					break;
 				  case kExpressionTypeNumberOrList:

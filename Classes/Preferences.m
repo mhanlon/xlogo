@@ -133,14 +133,14 @@ static Preferences	*sharedInstance = NULL;
 
 	// Get max turtles, if present:
 	value = [defaults objectForKey:@"Maximum Turtles"];
-	if(value)
+	if ( value )
 	{
 		maxTurtles = [value intValue];
 	}
 
 	// Get turtle speed, if present:
 	value = [defaults objectForKey:@"Turtle Speed Boolean"];
-	if(value)
+	if ( value )
 	{
 		saveTurtleSpeed = [value boolValue];
 	}
@@ -217,7 +217,7 @@ static Preferences	*sharedInstance = NULL;
 
 - (unsigned long)maxTurtles
 {
-	return(maxTurtles);
+	return maxTurtles;
 }
 
 - (void)setSaveTurtleSpeed:(BOOL)aSaveSpeed
