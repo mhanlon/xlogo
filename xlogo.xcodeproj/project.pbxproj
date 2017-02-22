@@ -161,6 +161,8 @@
 		859702051B10263900E48110 /* NoodleLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 859702011B10263900E48110 /* NoodleLineNumberMarker.m */; };
 		859702061B10263900E48110 /* NoodleLineNumberView.h in Headers */ = {isa = PBXBuildFile; fileRef = 859702021B10263900E48110 /* NoodleLineNumberView.h */; };
 		859702071B10263900E48110 /* NoodleLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 859702031B10263900E48110 /* NoodleLineNumberView.m */; };
+		85C37BB31B2756D500E422D1 /* GridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 85C37BB11B2756D500E422D1 /* GridView.h */; };
+		85C37BB41B2756D500E422D1 /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C37BB21B2756D500E422D1 /* GridView.m */; };
 		B41F377505541FF000A8017D /* kor.png in Resources */ = {isa = PBXBuildFile; fileRef = B41F377405541FF000A8017D /* kor.png */; };
 		B4571CD8056EBE8600A8017D /* Debugging.c in Sources */ = {isa = PBXBuildFile; fileRef = B4571CD7056EBE8600A8017D /* Debugging.c */; };
 		B461405B051EB8C100A8017D /* LogoColorTable.h in Headers */ = {isa = PBXBuildFile; fileRef = B4614059051EB8C100A8017D /* LogoColorTable.h */; };
@@ -238,6 +240,8 @@
 		859702011B10263900E48110 /* NoodleLineNumberMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberMarker.m; sourceTree = "<group>"; };
 		859702021B10263900E48110 /* NoodleLineNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberView.h; sourceTree = "<group>"; };
 		859702031B10263900E48110 /* NoodleLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberView.m; sourceTree = "<group>"; };
+		85C37BB11B2756D500E422D1 /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridView.h; sourceTree = "<group>"; };
+		85C37BB21B2756D500E422D1 /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridView.m; sourceTree = "<group>"; };
 		B41F37370554198300A8017D /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = Resources/German.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		B41F37380554198800A8017D /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = Resources/German.lproj/XLogoDocument.nib; sourceTree = "<group>"; };
 		B41F373905541F9C00A8017D /* Danish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Danish; path = Resources/Danish.lproj/MainMenu.nib; sourceTree = "<group>"; };
@@ -440,6 +444,8 @@
 				859702011B10263900E48110 /* NoodleLineNumberMarker.m */,
 				859702021B10263900E48110 /* NoodleLineNumberView.h */,
 				859702031B10263900E48110 /* NoodleLineNumberView.m */,
+				85C37BB11B2756D500E422D1 /* GridView.h */,
+				85C37BB21B2756D500E422D1 /* GridView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -530,6 +536,7 @@
 				4C66DBEC0B5B193600EC045B /* Commands.h in Headers */,
 				4C66DBED0B5B193600EC045B /* LogoParser.h in Headers */,
 				859702061B10263900E48110 /* NoodleLineNumberView.h in Headers */,
+				85C37BB31B2756D500E422D1 /* GridView.h in Headers */,
 				4C66DBEE0B5B193600EC045B /* Expression.h in Headers */,
 				4C66DBEF0B5B193600EC045B /* StackObject.h in Headers */,
 				4C66DBF00B5B193600EC045B /* LogoParserExpression.h in Headers */,
@@ -568,6 +575,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					4C66DBE20B5B193600EC045B = {
+						LastSwiftMigration = 0810;
+					};
+				};
 			};
 			buildConfigurationList = 4C66DBB10B5B136D00EC045B /* Build configuration list for PBXProject "xlogo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -699,6 +711,7 @@
 				4C66DC1A0B5B193600EC045B /* Preferences.m in Sources */,
 				859702071B10263900E48110 /* NoodleLineNumberView.m in Sources */,
 				4C66DC1B0B5B193600EC045B /* Debugging.c in Sources */,
+				85C37BB41B2756D500E422D1 /* GridView.m in Sources */,
 				859702051B10263900E48110 /* NoodleLineNumberMarker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -866,6 +879,7 @@
 				PRODUCT_NAME = XLogo;
 				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
+				SWIFT_VERSION = 3.0;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -895,6 +909,7 @@
 				PRODUCT_NAME = XLogo;
 				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
+				SWIFT_VERSION = 3.0;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -922,6 +937,7 @@
 				PRODUCT_NAME = XLogo;
 				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
+				SWIFT_VERSION = 3.0;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",

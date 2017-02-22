@@ -195,7 +195,7 @@
 	turtles = [parser turtles];		// Get the list of turtles
 	count = [turtles count];		// Find the number of turtles
 
-	// Now draw edach turtle
+	// Now draw each turtle
 	for(i = 0; i < count; i++)
 	{
 		[[turtles objectAtIndex:i] drawAtOffset:pt];

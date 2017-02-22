@@ -104,6 +104,11 @@
         [scrollView setHasVerticalRuler:YES];
         [scrollView setRulersVisible:YES];
     }
+    
+    if ( YES )
+    {
+        // TODO: Hide or show the grid view
+    }
 }
 
 //***************************************************************/

@@ -32,12 +32,14 @@
 #include "Debugging.h"
 
 #import <Cocoa/Cocoa.h>
+#import "GridView.h"
 
 @interface LogoDocument : NSDocument
 {
 	IBOutlet NSTextView*	listingView;
 	IBOutlet id	outputView;
-    // TODO: Add a GridView/RulerView for the outputView for the kids.
+    IBOutlet id	contentView;
+    IBOutlet GridView* gridView;
 	IBOutlet id	parser;
 	IBOutlet id	speedSlider;
     SEL _insertNewlineSelector;
