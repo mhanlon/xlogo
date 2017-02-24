@@ -430,7 +430,7 @@
 	double				condition;
 	unsigned long		i;
 	unsigned long		expressions;
-	const char			*expressionTypes;
+	const unsigned char			*expressionTypes;
 	char				t;
 	unichar				c;
 	BOOL				success;
@@ -448,8 +448,8 @@
 	const unsigned char	*matchTemplate;
 	unsigned long		startingLine;
 	unsigned long		startingColumn;
-	unsigned long		endingLine;
-	unsigned long		endingColumn;
+//	unsigned long		endingLine;
+//	unsigned long		endingColumn;
 #if 0	// a test-thing!
 	unsigned long		selectionStart;
 	unsigned long		selectionEnd;

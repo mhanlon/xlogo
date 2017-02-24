@@ -260,7 +260,7 @@
 	NSString				*varName;
 	NSString				*funcName;
 	NSString				*name;
-	unsigned				count;
+	unsigned long			count;
 	unsigned long			i;
 	Variable				*variable;
 

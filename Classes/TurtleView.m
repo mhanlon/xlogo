@@ -96,14 +96,14 @@
 #endif
 
 	DrawCommand	*drawCommand;
-	unsigned	i;
-	unsigned	count;
-	NSPoint		pt;
-	NSArray		*turtles;
-	float		hOffset;
-	float		vOffset;
-	NSColor		*theColor;
-	float		lineWidth;
+	unsigned        i;
+	unsigned long	count;
+	NSPoint         pt;
+	NSArray         *turtles;
+	float           hOffset;
+	float           vOffset;
+	NSColor         *theColor;
+	float           lineWidth;
 
 #ifdef TIME_IT
 	if(initTime)

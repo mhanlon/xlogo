@@ -59,7 +59,7 @@
 	[saveSpeed setState:[prefs saveTurtleSpeed]];
 
 	// Max turtles:
-	[maximumTurtles setIntValue:[prefs maxTurtles]];
+	[maximumTurtles setIntegerValue:[prefs maxTurtles]];
 
 	// Line width:
 	number = [NSNumber numberWithFloat:[prefs lineWidth]];
